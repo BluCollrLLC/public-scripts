@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    console.log('Page loaded, starting to disable Apply button...');
+    console.log('Page loaded, starting to disable Apply buttons...');
 
     // Function to disable all "Apply" buttons found on the page
     function disableApplyButtons() {
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // Initially disable Apply buttons if they are already on the page
+    // Initially disable Apply buttons if they are already on the page (this will disable the first one on load)
     disableApplyButtons();
 
     // Use MutationObserver to monitor changes across the entire page (DOM)
@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     console.log('Mutation observer started.');
 });
+
 
 
 
