@@ -24,8 +24,8 @@ document.addEventListener("DOMContentLoaded", function() {
     function hideApplyButton() {
         console.log('Checking for Apply button...');
         
-        // Find all elements with the 'apply-btn' class (regardless of other classes)
-        const applyBtns = document.querySelectorAll('.apply-btn');
+        // Find all elements with the 'apply-btn apply' class across the entire page
+        const applyBtns = document.querySelectorAll('.apply-btn.apply');
         
         if (applyBtns.length > 0) {
             console.log('Apply button(s) found! Hiding...');
