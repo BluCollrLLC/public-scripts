@@ -20,7 +20,9 @@ document.addEventListener("DOMContentLoaded", function() {
     // Use MutationObserver to monitor changes across the entire page (DOM)
     const observer = new MutationObserver(function(mutationsList, observer) {
         console.log('Mutation detected, checking for Apply buttons...');
-        hideApplyButton();  // Re-run the function when changes happen
+        
+        // Re-run the function when changes happen
+        hideApplyButton();  
     });
 
     // Start observing the entire document body for changes (child elements or subtree)
@@ -31,5 +33,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     console.log('Mutation observer started.');
 });
+
 
 
